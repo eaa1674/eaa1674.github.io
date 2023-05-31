@@ -1,3 +1,3 @@
-# Inverness Florida EAA Chapter Formation
+# Inverness Florida EAA Chapter 1674
 
 ## [I'm Interested!](https://docs.google.com/forms/d/e/1FAIpQLSc1SligUHLudh_Ca8Ou2EWo-nT2NsmsHoSSQrI1_3uXqoaQbA/viewform)
