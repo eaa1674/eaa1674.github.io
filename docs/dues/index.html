@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EAA Chapter 1674 | Inverness, Florida (KINF)</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <section class="section">
+      <div class="content">
+<div class="heading">
+  <div class="heading-logo">
+    <a href="/">
+      <img
+        id="heading-logo"
+        src="/EAA-Chapter-1674-Logo.png"
+        alt="EAA Chapter 1674 Logo"
+        width="300"
+        height="289"
+      />
+    </a>
+  </div>
+  <div class="heading-text">
+    <h1 class="title">EAA Chapter 1674</h1>
+    <h2 class="title">Pay Dues</h2>
+  </div>
+</div>
+<div class="body">
+  <div class="body-box">
+    <h1>EAA Chapter 1674 Inc &mdash; Membership Dues and Donations</h1>
+    <h2>We are a 501(c)(3) non-profit</h2>
+    <p>
+      Please add us as your
+      <a
+        href="https://smile.amazon.com/ch/88-2147708"
+        rel="noreferrer"
+        target="_blank"
+        >AmazonSmile</a
+      >
+      charity. Shop at
+      <a
+        href="https://smile.amazon.com/ch/88-2147708"
+        rel="noreferrer"
+        target="_blank"
+        >smile.amazon.com</a
+      >
+      or the mobile app and Amazon will donate 0.5% of eligible purchases to EAA
+      Chapter 1674 — no fees, no extra cost.
+    </p>
+    <h2>Dues</h2>
+    <p>
+      Annual Dues are $20 for individual and $25 for family and due each year in
+      January. All members must have a current EAA membership the plan
+      purchasing. If selecting a family membership plan, all fmaily members must
+      have a current EAA membership.
+    </p>
+    <h2>Pay</h2>
+    <ol>
+      <li>Select Individual, Family, or Custom / Donate Extra</li>
+      <li>
+        Plase add your name, 2023 dues, and EAA membership number in the memo if
+        using
+        <a href="https://paypal.me/eaa1674" target="_blank">paypal.me/eaa1674</a
+        >. See Figure 1 for an example.
+      </li>
+      <li>follow the PayPal prompts</li>
+    </ol>
+    <script
+      src="https://www.paypal.com/sdk/js?client-id=AVHwscI1wNZL2bmuxOoyl6jvhDmsTjL80VpOaxYr5ZpqU9H6AKaeC2Do4UwuWnzgxi6Ngm0p3KqB_Wv_"
+      data-sdk-integration-source="button-factory"
+    ></script>
+    <h2>Pay Individual Dues</h2>
+    <div id="smart-button-container-individual">
+      <div style="text-align: center">
+        <div id="paypal-button-container-individual"></div>
+      </div>
+    </div>
+    <script>
+      function initPayPalButtonIndividual() {
+        paypal
+          .Buttons({
+            style: {
+              shape: "pill",
+              color: "blue",
+              layout: "vertical",
+              label: "pay",
+            },
+
+            createOrder: function (data, actions) {
+              return actions.order.create({
+                purchase_units: [
+                  {
+                    description: "Individual Annual Dues",
+                    amount: { currency_code: "USD", value: 20 },
+                  },
+                ],
+              });
+            },
+
+            onApprove: function (data, actions) {
+              return actions.order.capture().then(function (orderData) {
+                // Full available details
+                console.log(
+                  "Capture result",
+                  orderData,
+                  JSON.stringify(orderData, null, 2)
+                );
+
+                // Show a success message within this page, e.g.
+                const element = document.getElementById(
+                  "paypal-button-container-individual"
+                );
+                element.innerHTML = "";
+                element.innerHTML = "<h3>Thank you for your payment!</h3>";
+
+                // Or go to another URL:  actions.redirect('thank_you.html');
+              });
+            },
+
+            onError: function (err) {
+              console.log(err);
+            },
+          })
+          .render("#paypal-button-container-individual");
+      }
+      initPayPalButtonIndividual();
+    </script>
+
+    <h2>Pay Family Dues</h2>
+    <div id="smart-button-container-family">
+      <div style="text-align: center">
+        <div id="paypal-button-container-family"></div>
+      </div>
+    </div>
+    <script>
+      function initPayPalButtonFamily() {
+        paypal
+          .Buttons({
+            style: {
+              shape: "pill",
+              color: "silver",
+              layout: "vertical",
+              label: "pay",
+            },
+
+            createOrder: function (data, actions) {
+              return actions.order.create({
+                purchase_units: [
+                  {
+                    description: "Family Annual Dues",
+                    amount: { currency_code: "USD", value: 25 },
+                  },
+                ],
+              });
+            },
+
+            onApprove: function (data, actions) {
+              return actions.order.capture().then(function (orderData) {
+                // Full available details
+                console.log(
+                  "Capture result",
+                  orderData,
+                  JSON.stringify(orderData, null, 2)
+                );
+
+                // Show a success message within this page, e.g.
+                const element = document.getElementById(
+                  "paypal-button-container-family"
+                );
+                element.innerHTML = "";
+                element.innerHTML = "<h3>Thank you for your payment!</h3>";
+
+                // Or go to another URL:  actions.redirect('thank_you.html');
+              });
+            },
+
+            onError: function (err) {
+              console.log(err);
+            },
+          })
+          .render("#paypal-button-container-family");
+      }
+      initPayPalButtonFamily();
+    </script>
+
+    <h2>Pay Custom Amount or Donate Extra</h2>
+
+    <div class="center">
+      <form
+        action="https://www.paypal.com/donate"
+        method="post"
+        target="_blank"
+      >
+        <input type="hidden" name="hosted_button_id" value="SDX3KFDT5XE9Y" />
+        <input
+          type="image"
+          src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+          border="0"
+          name="submit"
+          title="PayPal - The safer, easier way to pay online!"
+          alt="Donate with PayPal button"
+        />
+        <img
+          alt=""
+          border="0"
+          src="https://www.paypal.com/en_US/i/scr/pixel.gif"
+          width="1"
+          height="1"
+        />
+      </form>
+      <img
+        src="/paypal-donate-qr-code.png"
+        alt="Donate to EAA Chapter 1674 Inc"
+        height="128"
+        width="128"
+      />
+    </div>
+
+    <h2>Example</h2>
+    <div class="figures">
+      <figure>
+        <img
+          src="/pay-dues.png"
+          alt="Pay dues for EAA Chapter 1674"
+          width="400"
+          height="449"
+        />
+        <figcaption>Figure 1: Pay EAA Chapter 1674 Dues</figcaption>
+      </figure>
+    </div>
+  </div>
+  </div>
+    </section>
+  </body>
+</html>
