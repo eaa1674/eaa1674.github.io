@@ -1,0 +1,3 @@
++++
+template = "amazon-smile.html"
++++
